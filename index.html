@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="fr">
+	<head>
+        <meta charset="utf-8" />
+		<title>L3 MIAGE TP2</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<script src="node_modules/systemjs/dist/system.src.js"></script>
+		<script src="systemjs.config.js"></script>
+		<script>
+            let $;
+			System.import("main").then( main => $ = main.$ ).catch(function(err){ console.error(err); });
+		</script>
+	</head>
+	<body>
+		<h1>L3 MIAGE, TP2</h1>
+		<p>où on apprend comment réaliser un mini JQuery...</p>
+        <ul class="testAppend">
+            <li>toto</li>
+            <li>titi</li>
+            <li>tata</li>
+            <li>tutu</li>
+            <li>tete</li>
+        </ul>
+
+        To do list: <span class="testClick">(click here to change)</span>
+        <ul class>
+            <li>Eat</li>
+            <li>Sleep</li>
+            <li>Be merry</li>
+        </ul>
+
+    </body>
+</html>
